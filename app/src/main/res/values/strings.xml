@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MRZ Scanner</string>
+
+    <string name="lbl_scan_mrz">SCAN MRZ</string>
 </resources>

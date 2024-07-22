@@ -6,6 +6,12 @@ android {
     namespace 'ro.sts.mrzscanner'
     compileSdk 34
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
     defaultConfig {
         applicationId "ro.sts.mrzscanner"
         minSdk 24
@@ -14,6 +20,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters "armeabi-v7a"/*, "arm64-v8a", "x86", "x86_64"*/
+        }
     }
 
     buildTypes {
